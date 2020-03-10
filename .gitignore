@@ -5,8 +5,8 @@
 !*.yaml
 !.gitignore
 !*.md
-!automations/ 
 !groups/ 
+!automations/ 
 !entities/ 
 !packages/ 
 !themes/ 
