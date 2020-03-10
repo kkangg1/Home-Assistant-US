@@ -5,12 +5,12 @@
 !*.yaml
 !.gitignore
 !*.md
-!groups/ 
-!automations/ 
-!entities/ 
-!packages/ 
-!themes/ 
-!www/
+!groups/*
+!automations/* 
+!entities/* 
+!packages/* 
+!themes/* 
+!www/*
 # Ignore folders.
 .storage
 .cloud
