@@ -13,7 +13,10 @@ homeassistant:
   unit_system: metric
   time_zone: America/New_York
   customize: !include_dir_merge_named customize
-
+  packages: !include_dir_named packages
+#UI界面
+lovelace:
+  mode: yaml
 # Text to speech
 tts:
   - platform: google_translate
@@ -22,6 +25,7 @@ group: !include_dir_merge_named groups/
 automation: !include_dir_merge_list  automations/
 script: !include scripts.yaml
 scene: !include scenes.yaml
+
 
 input_boolean:
   notify_home:

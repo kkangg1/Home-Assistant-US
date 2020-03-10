@@ -1,2 +1,5 @@
 sun.sun:
-      hidden: true
+  hidden: true
+
+zone.home:
+  radius: 20

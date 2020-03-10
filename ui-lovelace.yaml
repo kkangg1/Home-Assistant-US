@@ -1,0 +1,25 @@
+title: US Home
+views:
+  - badges:
+      - entity: binary_sensor.updater
+      - entity: person.us_home
+    cards:
+      - entity: weather.home
+        type: weather-forecast
+      - entities:
+          - entity: input_boolean.notify_home
+        type: entities
+      - type: glance
+        entities:
+          - entity: sensor.cpu_wen_du
+            name: CPU 温度
+          - entity: sensor.processor_use
+            name: CPU 用量
+          - entity: sensor.memory_use_percent
+            name: 内存用量
+          - entity: sensor.disk_use_percent_home
+            name: 磁盘用量
+        title: 系统
+    path: default_view
+    title: Home
+  - title: Living Room
