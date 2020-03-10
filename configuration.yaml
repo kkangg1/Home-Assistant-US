@@ -6,9 +6,13 @@ default_config:
 #   base_url: example.duckdns.org:8123
 
 homeassistant:
-  customize:
-    sun.sun:
-      hidden: true
+  name: US Home
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  elevation: !secret homeassistant_elevation
+  unit_system: metric
+  time_zone: America/New_York
+  customize: !include_dir_merge_named customize
 
 # Text to speech
 tts:
