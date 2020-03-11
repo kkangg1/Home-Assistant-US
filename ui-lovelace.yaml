@@ -1,3 +1,28 @@
+
+resources:
+  - url: /hacsfiles/secondaryinfo-entity-row/secondaryinfo-entity-row.js
+    type: module
+  - url: /hacsfiles/vertical-stack-in-card/vertical-stack-in-card.js
+    type: module
+  - url: /hacsfiles/custom-header/custom-header.js
+    type: module
+  - url: /hacsfiles/lovelace-card-tools/card-tools.
+    type: module
+
+
+
+
+
+
+
+
+custom_header:
+  compact_mode: true
+  hide_help: true
+  hide_config: true
+  shadow: on
+  chevrons: false
+
 title: US Home
 views:
   - badges:
@@ -12,13 +37,9 @@ views:
       - type: glance
         entities:
           - entity: sensor.cpu_wen_du
-            name: CPU 温度
           - entity: sensor.processor_use
-            name: CPU 用量
           - entity: sensor.memory_use_percent
-            name: 内存用量
           - entity: sensor.disk_use_percent_home
-            name: 磁盘用量
         title: 系统
     path: default_view
     title: Home

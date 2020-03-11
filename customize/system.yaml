@@ -1,5 +1,10 @@
 sun.sun:
   hidden: true
-
 zone.home:
   radius: 20
+sensor.disk_use_percent_home:
+  friendly_name: 磁盘用量
+sensor.memory_use_percent:
+  friendly_name: 内存用量
+sensor.processor_use:
+  friendly_name: CPU 用量
