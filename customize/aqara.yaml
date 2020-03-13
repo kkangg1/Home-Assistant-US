@@ -1,0 +1,8 @@
+binary_sensor.motion_sensor_5923:
+  friendly_name: 房门人体传感器
+light.aqara_hub_a5dc:
+  friendly_name: 网关
+switch.outlet_382c:
+  friendly_name: 客厅灯
+binary_sensor.door_and_window_sensor_c9e1:
+  friendly_name: 房门传感器

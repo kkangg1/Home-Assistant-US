@@ -1,0 +1,48 @@
+title: 系统
+cards:
+  - type: custom:vertical-stack-in-card
+    title: Hass.io Host Load
+    cards:
+      - type: horizontal-stack
+        cards:
+        - type: custom:mini-graph-card
+          entities:
+            - sensor.cpu_wen_du 
+          show:
+            labels: true
+          hours_to_show: 1
+          points_per_hour: 30
+          color_thresholds:
+            - value: 20
+              color: "#32c02b"
+            - value: 40
+              color: "#f39c12"
+            - value: 52
+              color: "#d35400"
+            - value: 65
+              color: "#c0392b"
+        - type: horizontal-stack
+          cards:
+          - type: custom:mini-graph-card
+            entities:
+              - sensor.processor_use 
+            line_color: blue
+            show:
+              labels: true
+              icon: mdi:memory
+            hours_to_show: 1
+            points_per_hour: 1200
+      - type: horizontal-stack
+        cards:
+        - type: gauge
+          entity: sensor.memory_use_percent
+          severity:
+            green: 0
+            yellow: 40
+            red: 80
+        - type: gauge
+          entity: sensor.disk_use_percent_home
+          severity:
+            green: 0
+            yellow: 45
+            red: 85

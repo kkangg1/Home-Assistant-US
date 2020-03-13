@@ -6,14 +6,12 @@ resources:
     type: module
   - url: /hacsfiles/custom-header/custom-header.js
     type: module
-  - url: /hacsfiles/lovelace-card-tools/card-tools.
+  - url: /hacsfiles/lovelace-card-tools/card-tools.js
     type: module
-
-
-
-
-
-
+  - url: /hacsfiles/entity-attributes-card/entity-attributes-card.js
+    type: module
+  - url: /hacsfiles/mini-graph-card/mini-graph-card-bundle.js
+    type: module
 
 
 custom_header:
@@ -24,23 +22,4 @@ custom_header:
   chevrons: false
 
 title: US Home
-views:
-  - badges:
-      - entity: binary_sensor.updater
-      - entity: person.us_home
-    cards:
-      - entity: weather.home
-        type: weather-forecast
-      - entities:
-          - entity: input_boolean.notify_home
-        type: entities
-      - type: glance
-        entities:
-          - entity: sensor.cpu_wen_du
-          - entity: sensor.processor_use
-          - entity: sensor.memory_use_percent
-          - entity: sensor.disk_use_percent_home
-        title: 系统
-    path: default_view
-    title: Home
-  - title: Living Room
+views: !include_dir_list lovelace/

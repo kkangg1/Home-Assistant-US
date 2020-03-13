@@ -26,11 +26,14 @@ automation: !include_dir_merge_list  automations/
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
-input_boolean:
-  notify_home:
-    name: Notify when someone arrives home
-    initial: off
-    icon: mdi:car
-
 
 homekit:
+  auto_start: false
+  exclude_domains:
+    - automations/automation
+
+logger:
+  default: warning
+  logs:
+    homeassistant.components.homekit: debug
+    pyhap: debug

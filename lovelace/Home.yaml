@@ -1,0 +1,16 @@
+badges:
+  - entity: binary_sensor.updater
+  - entity: person.us_home
+cards:
+  - entity: weather.home
+    type: weather-forecast
+  - type: glance
+    entities:
+      - entity: sensor.cpu_wen_du
+      - entity: sensor.processor_use
+      - entity: sensor.memory_use_percent
+      - entity: sensor.disk_use_percent_home
+    title: 系统
+path: default_view
+title: Home
+icon: mdi:home
