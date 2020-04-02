@@ -1,0 +1,16 @@
+
+homeassistant:
+homekit:
+  auto_start: false
+  filter:
+    include_entities: 
+      - sensor.temperature_and_humidity_sensor_31b0_temperature
+      - sensor.temperature_and_humidity_sensor_ead2p_temperature
+      - binary_sensor.motion_sensor_03cd
+      - binary_sensor.motion_sensor_5923
+      - binary_sensor.motion_sensor_7900
+      - binary_sensor.motion_sensor_b350
+      - light.zou_lang_deng_3
+      - sensor.light_detection_sensor_59a0_light_level
+      - switch.outlet_382c
+      - switch.outlet_4004

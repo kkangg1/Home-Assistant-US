@@ -1,8 +1,27 @@
 binary_sensor.motion_sensor_5923:
-  friendly_name: 房门人体传感器
+  friendly_name: 房门运动
 light.aqara_hub_a5dc:
   friendly_name: 网关
 switch.outlet_382c:
   friendly_name: 客厅灯
 binary_sensor.door_and_window_sensor_c9e1:
-  friendly_name: 房门传感器
+  device_class: contact
+  friendly_name: 房门
+binary_sensor.motion_sensor_03cd:
+  friendly_name: 下层运动
+binary_sensor.motion_sensor_7900:
+  friendly_name: 上层运动
+binary_sensor.motion_sensor_b350:
+  friendly_name: 运动（未设置）
+sensor.light_detection_sensor_59a0_light_level:
+  friendly_name: 客厅亮度
+sensor.temperature_and_humidity_sensor_31b0_humidity:
+  friendly_name: 客厅湿度
+sensor.temperature_and_humidity_sensor_31b0_temperature: 
+  friendly_name: 客厅温度
+sensor.temperature_and_humidity_sensor_ead2_humidity:
+  friendly_name: 卧室湿度
+sensor.temperature_and_humidity_sensor_ead2_temperature:
+  friendly_name: 卧室温度
+switch.outlet_4004:
+  friendly_name: 卧室灯

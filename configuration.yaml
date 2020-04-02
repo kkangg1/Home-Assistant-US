@@ -21,19 +21,55 @@ lovelace:
 tts:
   - platform: google_translate
 
+
 group: !include_dir_merge_named groups/
 automation: !include_dir_merge_list  automations/
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
 
-homekit:
-  auto_start: false
-  exclude_domains:
-    - automations/automation
+
+vera:
+  vera_controller_url: http://192.168.1.114:3480/
+  lights: [3]
+
+sensor:
+  - platform: darksky
+    api_key: !secret darksky_api_key
+    language: zh
+    forecast:
+      - 0
+      - 1
+    hourly_forecast:
+    monitored_conditions:
+      - summary
+      - temperature
+      - apparent_temperature
+      - temperature_max
+      - temperature_min
+      - humidity
+      - precip_probability
+      - precip_intensity
+      - precip_type
+      - pressure
+      - wind_bearing
+      - wind_speed
+      - icon
+
+
 
 logger:
   default: warning
   logs:
     homeassistant.components.homekit: debug
     pyhap: debug
+
+# Enables support for tracking state changes over time.
+recorder:
+  # Delete events and states older than 2 weeks
+  purge_keep_days: 14
+  # db_url: !secret dburl
+
+timer:
+  stairs:
+    duration: '00:02:00'

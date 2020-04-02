@@ -1,2 +1,0 @@
-binary_sensor.door_and_window_sensor_c9e1:
-  device_class: door

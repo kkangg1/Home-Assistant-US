@@ -1,0 +1,7 @@
+load_main_panel:
+  widget_type: navigate
+  icon_inactive: mdi-server
+  dashboard: System
+  icon_style_inactive:  "color: black"
+layout: 
+  - load_main_panel

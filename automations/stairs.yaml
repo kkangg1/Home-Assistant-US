@@ -1,0 +1,23 @@
+- alias: Turn on stair light
+  trigger:
+    platform: state
+    entity_id: binary_sensor.motion_sensor_03cd, binary_sensor.motion_sensor_7900
+    to: 'on'
+  action:
+  - service: light.turn_on
+    entity_id: light.zou_lang_deng_3
+  - service: timer.start
+    data:
+      entity_id: timer.stairs
+
+- alias: Turn off stair light
+  trigger:
+    platform: event
+    event_type: timer.finished
+    event_data:
+      entity_id: timer.stairs
+  action:
+    service: light.turn_off
+    data:
+      entity_id:
+        - light.zou_lang_deng_3

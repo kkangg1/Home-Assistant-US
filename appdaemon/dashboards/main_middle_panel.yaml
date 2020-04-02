@@ -1,0 +1,27 @@
+light:
+  widget_type: switch
+  title: 客厅灯
+  entity: switch.outlet_382c
+  icon_on: mdi-white-balance-incandescent
+  icon_off: mdi-white-balance-incandescent
+light_bed:
+  widget_type: switch
+  title: 卧室灯
+  entity: switch.outlet_4004
+  icon_on: mdi-white-balance-incandescent
+  icon_off: mdi-white-balance-incandescent
+weather:
+  widget_type: weather
+  units: "&deg;C"
+  color: blue
+  sensors: weather.home
+
+light_stairs:
+    widget_type: switch
+    title: 走廊灯
+    entity: light.zou_lang_deng_3
+    icon_on: mdi-white-balance-incandescent
+    icon_off: mdi-white-balance-incandescent
+
+layout:
+  - light, light_bed,light_stairs

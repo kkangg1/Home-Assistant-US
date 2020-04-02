@@ -3,11 +3,11 @@ cards:
   - type: glance
     title: 客厅映射
     entities:
-      - entity: light.aqara_hub_a5dc
-        tap_action:
-          action: toggle
-      - entity: binary_sensor.door_and_window_sensor_c9e1
-      - entity: binary_sensor.motion_sensor_5923
-      - entity: switch.outlet_382c
-        tap_action:
-          action: toggle
+    #   - entity: light.aqara_hub_a5dc
+    #     tap_action:
+    #       action: toggle
+    #   - entity: binary_sensor.door_and_window_sensor_c9e1
+    #   - entity: binary_sensor.motion_sensor_5923
+    #   - entity: switch.outlet_382c
+    #     tap_action:
+    #       action: toggle

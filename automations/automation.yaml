@@ -3,5 +3,5 @@
     - platform: homeassistant
       event: start
   action:
-    - delay: 00:02
+    - delay: 00:01
     - service: homekit.start

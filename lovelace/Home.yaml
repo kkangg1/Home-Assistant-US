@@ -11,6 +11,24 @@ cards:
       - entity: sensor.memory_use_percent
       - entity: sensor.disk_use_percent_home
     title: 系统
+  - type: glance
+    entities:
+      - entity: input_boolean.floor
+        tap_action:
+          action: toggle
+      - entity: light.zou_lang_deng_3
+        tap_action:
+          action: toggle
+      - entity: switch.outlet_4004
+        tap_action:
+          action: toggle
+      - entity: switch.outlet_382c
+        tap_action:
+          action: toggle
+      - entity: binary_sensor.motion_sensor_03cd
+      - entity: binary_sensor.motion_sensor_7900
+
+    title: 设备
 path: default_view
 title: Home
 icon: mdi:home

@@ -1,0 +1,11 @@
+
+hello_world:
+  module: hello
+  class: HelloWorld
+
+# bedroom_temp:
+#   module: test
+#   class: test
+#   target_temp: 23
+#   sensors:
+#     - sensor.temperature_and_humidity_sensor_31b0_temperature

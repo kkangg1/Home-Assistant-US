@@ -1,0 +1,10 @@
+#binary判断
+homeassistant:
+
+input_boolean:
+  floor:
+    name: 在楼上
+    initial: off
+    icon: mdi:car
+
+

@@ -1,0 +1,24 @@
+clock:
+  widget_type: clock
+  time_format: "24hr"
+  show_seconds: 1
+  date_style: "color: white"
+  time_style: "color: white"
+
+temp_living:
+  widget_type: sensor
+  entity: sensor.temperature_and_humidity_sensor_31b0_temperature
+  title: 客厅温度
+temp_bed:
+  widget_type: sensor
+  entity: sensor.temperature_and_humidity_sensor_ead2_temperature
+  title: 卧室温度
+
+brightness_bed:
+  widget_type: sensor
+  entity: sensor.light_detection_sensor_59a0_light_level
+  title: 客厅亮度
+
+
+layout:
+  - temp_living, temp_bed, brightness_bed
