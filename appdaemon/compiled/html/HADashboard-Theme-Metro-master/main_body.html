@@ -1,0 +1,36 @@
+<! body tags ->
+
+
+    
+          <script>
+    
+            document.body.addEventListener('touchmove', function(event) {
+    
+              console.log(event.source);
+    
+              //if (event.source == document.body)
+    
+                event.preventDefault();
+    
+            }, false);
+    
+          </script>
+    
+        <div id='stars'></div>
+    
+        <div id='stars2'></div>
+    
+        <div id='stars3'></div>
+    
+        <div id='moon'>
+    
+          <div class='craterCon'>
+    
+            <div class='craters'></div>
+    
+          </div>
+    
+          <div class='glow'></div>
+    
+        </div>
+    

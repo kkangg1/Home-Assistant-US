@@ -2,6 +2,10 @@
 *
 
 # Whitelist files/folders
+!*.html
+!*.jpg
+!*.js
+!*.css
 !*.yaml
 !.gitignore
 !*.md
